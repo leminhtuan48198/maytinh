@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>maytinh</title>
+</head>
+<body>
+<input type="text" id="num1">
+<input type="text" id="num2">
+<br>
+<button onclick="f1()">Addition(+)</button>
+<button onclick="f2()">Subtraction(-)</button>
+<button onclick="f3()">Division(/)</button>
+<button onclick="f4()">Multiplication(X)</button>
+<br>
+<b><p id="text1"> Result</p></b>
+<script>
+
+    function f1(){let n1=Number(document.getElementById('num1').value);
+        let n2=Number(document.getElementById('num2').value);
+        let s=n1+n2;
+        document.getElementById('text1').innerText="Result Additon: "+s
+    }function f2(){let n1=Number(document.getElementById('num1').value);
+        let n2=Number(document.getElementById('num2').value);
+        let s=n1-n2;
+        document.getElementById('text1').innerText="Result Subtraction: "+s
+    }function f3(){let n1=Number(document.getElementById('num1').value);
+        let n2=Number(document.getElementById('num2').value);
+        let s=n1/n2;
+        document.getElementById('text1').innerText="Result Division: "+s
+    }function f4(){let n1=Number(document.getElementById('num1').value);
+        let n2=Number(document.getElementById('num2').value);
+        let s=n1*n2;
+        document.getElementById('text1').innerText="Result Multiplication: "+s
+    }
+
+
+
+
+</script>
+</body>
+</html>
